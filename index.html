@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz de Engenharia de Software</title>
-    <link rel="stylesheet" href="./style.css">
-    <link src="./script.js" defer>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="quiz-container">
-        <h1>Quiz de Engenharia de Software</h1>
-        <div id="question-area">
-            <p id="question-text"></p>
-            <div id="options-container" class="options-container"></div>
-            <div id="feedback" class="feedback"></div>
-            <button id="next-button" class="hidden">Próxima Questão</button>
-        </div>
-        <div id="results-area" class="hidden">
-            <h2>Resultados do Quiz</h2>
-            <p>Você acertou <span id="correct-count"></span> de <span id="total-questions"></span> questões.</p>
-            <h3>Questões Erradas:</h3>
-            <ul id="incorrect-questions-list"></ul>
-            <button id="restart-button">Refazer Quiz</button>
-        </div>
+      <h1>Quiz de Engenharia de Software</h1>
+      <div id="question-area">
+        <p id="question-text"></p>
+        <div id="options-container" class="options-container"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="next-button" class="hidden">Próxima Questão</button>
+      </div>
+      <div id="results-area" class="hidden">
+        <h2>Resultados do Quiz</h2>
+        <p>
+          Você acertou <span id="correct-count"></span> de
+          <span id="total-questions"></span> questões.
+        </p>
+        <h3>Questões Erradas:</h3>
+        <ul id="incorrect-questions-list"></ul>
+        <button id="restart-button">Refazer Quiz</button>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
