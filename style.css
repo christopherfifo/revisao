@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: left;
+}
+
+.option-button:hover:not(.disabled) {
+    background-color: #dcdcdc;
+}
+
+.option-button.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    font-weight: bold;
+}
+
+.option-button.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    font-weight: bold;
+}
+
+.option-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    min-height: 25px; /* Para evitar que o layout "salte" */
+}
+
+.feedback.correct-feedback {
+    color: #28a745;
+}
+
+.feedback.incorrect-feedback {
+    color: #dc3545;
+}
+
+#next-button, #restart-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover, #restart-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#results-area {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#results-area h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#incorrect-questions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#incorrect-questions-list li {
+    background-color: #fdf3f4;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #721c24;
+}
+
+#incorrect-questions-list li strong {
+    color: #333;
+}
